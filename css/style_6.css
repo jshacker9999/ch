@@ -1,0 +1,35 @@
+/*===== Style_6 =====*/
+
+/* On mouse-over */
+
+.style_6 .check:hover input~.checkmark {
+    background: none;
+}
+
+/* When the checkbox is checked */
+
+.style_6 .check input:checked~.checkmark:after {
+    content: "\f004";
+    font-family: FontAwesome;
+    font-size: 24px;
+}
+
+.style_6.dark .check input:checked~.checkmark:after {
+    color: #34495e;
+}
+
+.style_6.blue .check input:checked~.checkmark:after {
+    color: #3498db;
+}
+
+.style_6.orangered .check input:checked~.checkmark:after {
+    color: #e74c3c;
+}
+
+.style_6.magenta .check input:checked~.checkmark:after {
+    color: #9b59b6;
+}
+
+.style_6 .check input:checked~.checkmark {
+    background: none;
+}

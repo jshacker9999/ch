@@ -1,0 +1,76 @@
+/*===== Style_4 =====*/
+
+/* On mouse-over */
+
+.style_4.blue .check:hover input~.checkmark {
+    background-color: #3498db;
+}
+
+.style_4.orangered .check:hover input~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_4.dark .check:hover input~.checkmark {
+    background-color: #34495e;
+}
+
+.style_4.magenta .check:hover input~.checkmark {
+    background-color: #9b59b6;
+}
+
+/* When the checkbox is checked */
+
+.style_4.blue .check input:checked~.checkmark {
+    background-color: #3498db;
+}
+
+.style_4.orangered .check input:checked~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_4.dark .check input:checked~.checkmark {
+    background-color: #34495e;
+}
+
+.style_4.magenta .check input:checked~.checkmark {
+    background-color: #9b59b6;
+}
+
+.style_4 .check input:checked~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_4 .check input:checked~.checkmark:before {
+    display: block;
+}
+
+.style_4 .check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark before */
+
+.style_4 .check .checkmark::before {
+    left: 0px;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+}
+
+/* Style the checkmark after */
+
+.style_4 .check .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10px 10px 0 0;
+    border-style: solid;
+    border-color: white #cccccc white #cccccc;
+    background: #cccccc;
+    width: 0;
+    display: none;
+}

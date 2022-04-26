@@ -1,0 +1,57 @@
+/*===== Style_10 =====*/
+
+.style_10 .checkmark {
+    transition: 1s;
+}
+
+/* On mouse-over */
+
+.style_10.blue .check:hover input~.checkmark {
+    background-color: #3498db;
+}
+
+.style_10.orangered .check:hover input~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_10.dark .check:hover input~.checkmark {
+    background-color: #34495e;
+}
+
+.style_10.magenta .check:hover input~.checkmark {
+    background-color: #9b59b6;
+}
+
+/* When the checkbox is checked */
+
+.style_10 .check input:checked~.checkmark {
+    border: 2px solid #ccc;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.style_10.blue .check input:checked~.checkmark {
+    background-color: #3498db;
+    border: 2px solid #ccc;
+}
+
+.style_10.orangered .check input:checked~.checkmark {
+    background-color: #e74c3c;
+    border: 2px solid #ccc;
+}
+
+.style_10.dark .check input:checked~.checkmark {
+    background-color: #34495e;
+    border: 2px solid #ccc;
+}
+
+.style_10.magenta .check input:checked~.checkmark {
+    background-color: #9b59b6;
+    border: 2px solid #ccc;
+}
+
+.style_10 .check input:checked~.checkmark {
+    background-color: #e74c3c;
+}

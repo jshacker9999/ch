@@ -1,0 +1,46 @@
+/*===== Style_3 =====*/
+
+/* On mouse-over */
+
+.style_3 .check:hover input~.checkmark {
+    background: none;
+}
+
+/* On mouse-check */
+
+.style_3 .checkmark {
+    transition: 1s;
+}
+
+.style_3 .check input:checked~.checkmark {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.style_3 .check input:checked~.checkmark:after {
+    content: "\f058";
+    font-family: FontAwesome;
+    font-size: 28px;
+}
+
+.style_3.dark .check input:checked~.checkmark:after {
+    color: #34495e;
+}
+
+.style_3.blue .check input:checked~.checkmark:after {
+    color: #3498db;
+}
+
+.style_3.orangered .check input:checked~.checkmark:after {
+    color: #e74c3c;
+}
+
+.style_3.magenta .check input:checked~.checkmark:after {
+    color: #9b59b6;
+}
+
+.style_3 .check input:checked~.checkmark {
+    background: none;
+}

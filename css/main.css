@@ -1,0 +1,130 @@
+/* ------------------------------------------------------
+            Main Style Stylesheet
+            Project :       Custom Ckeckbox Css
+            Version :       0.1
+            Author :        Mohamed Yousef
+            Primary use :   All purposes
+------------------------------------------------------ */
+
+/* ------------------------------------------------------
+   body
+    + STYLE_1
+    + STYLE_2
+    + STYLE_3
+    + STYLE_4
+    + STYLE_5
+    + STYLE_6
+    + STYLE_7
+    + STYLE_8
+    + STYLE_9
+    + STYLE_10
+    + STYLE_11
+    + STYLE_12
+    + STYLE_13
+------------------------------------------------------ */
+
+/*===== Import Fontawesome =====*/
+
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/*===== Import Css Files =====*/
+
+@import "style_1.css";
+@import "style_2.css";
+@import "style_3.css";
+@import "style_4.css";
+@import "style_5.css";
+@import "style_6.css";
+@import "style_7.css";
+@import "style_8.css";
+@import "style_9.css";
+@import "style_10.css";
+@import "style_11.css";
+@import "style_12.css";
+@import "style_13.css";
+/*===== Main Style =====*/
+
+body {
+    background: #eeeeee;
+}
+
+.custom-checkbox {
+    padding: 20px 0px;
+}
+
+.custom-checkbox .check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 25px;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+
+.custom-checkbox .check input {
+    position: absolute;
+    opacity: 0;
+    left: 0px;
+}
+
+.custom-checkbox h3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #888;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.custom-checkbox .title {
+    background: #1abc9c;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #16a085;
+}
+
+.custom-checkbox .row .col-sm:last-child {
+    padding-right: 15px;
+}
+
+.custom-checkbox .block {
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.custom-checkbox .col-sm {
+    padding-right: 0px;
+}
+
+.custom-checkbox .checkmark {
+    border: 1px solid #ddd;
+}
+
+.custom-checkbox .check input:checked~.checkmark {
+    border: none;
+}
+
+/*===== Custom Padding Right @media (max-width:767px)  =====*/
+
+@media (max-width:767px) {
+    .custom-checkbox .col-sm {
+        padding-right: 15px;
+    }
+}

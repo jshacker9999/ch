@@ -1,0 +1,47 @@
+/*===== Style_13 =====*/
+
+.style_13 .check {
+    overflow: hidden;
+}
+
+/* When the checkbox is checked */
+
+.style_13 .check input:checked~.checkmark {
+    background: none;
+    left: 25px;
+    overflow: visible;
+    transition: 0.5s;
+}
+
+/* Style the checkmark and checkmark:after */
+
+.style_13 .checkmark {
+    transition: 0.5s;
+    overflow: visible !important;
+}
+
+.style_13 .check .checkmark:after {
+    left: -101%;
+    top: 2px;
+    transition: 0.5s;
+    content: "\f0a4";
+    font-family: FontAwesome;
+    font-size: 22px;
+    position: absolute;
+}
+
+.style_13.magenta .checkmark:after {
+    color: #9b59b6;
+}
+
+.style_13.blue .checkmark:after {
+    color: #3498db;
+}
+
+.style_13.orangered .checkmark:after {
+    color: #e74c3c;
+}
+
+.style_13.dark .checkmark:after {
+    color: #34495e;
+}

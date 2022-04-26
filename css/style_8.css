@@ -1,0 +1,43 @@
+/*===== Style_8 =====*/
+
+/* On mouse-over */
+
+.style_8 .check:hover input~.checkmark {
+    background: none;
+}
+
+/* When the checkbox is checked */
+
+.style_8 .checkmark {
+    transition: 1s;
+}
+
+.style_8 .check input:checked~.checkmark:after {
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 25px;
+}
+
+.style_8.dark .check input:checked~.checkmark:after {
+    color: #34495e;
+}
+
+.style_8.blue .check input:checked~.checkmark:after {
+    color: #3498db;
+}
+
+.style_8.orangered .check input:checked~.checkmark:after {
+    color: #e74c3c;
+}
+
+.style_8.magenta .check input:checked~.checkmark:after {
+    color: #9b59b6;
+}
+
+.style_8 .check input:checked~.checkmark {
+    background: none;
+    -webkit-transform: rotate(72deg);
+    -ms-transform: rotate(72deg);
+    transform: rotate(72deg);
+    transition: 1s;
+}

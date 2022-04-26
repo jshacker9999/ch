@@ -1,0 +1,90 @@
+/*===== Style_2 =====*/
+
+/* On mouse-over */
+
+.style_2.blue .check:hover input~.checkmark {
+    border: 1px solid #3498db;
+    background: #fff;
+}
+
+.style_2.orangered .check:hover input~.checkmark {
+    border: 1px solid #e74c3c;
+    background: #fff;
+}
+
+.style_2.dark .check:hover input~.checkmark {
+    border: 1px solid #34495e;
+    background: #fff;
+}
+
+.style_2.magenta .check:hover input~.checkmark {
+    border: 1px solid #9b59b6;
+    background: #fff;
+}
+
+/* When the checkbox is checked */
+
+.style_2.blue .check input:checked~.checkmark {
+    border: 1px solid #3498db;
+    background: #fff;
+}
+
+.style_2.orangered .check input:checked~.checkmark {
+    border: 1px solid #e74c3c;
+    background: #fff;
+}
+
+.style_2.dark .check input:checked~.checkmark {
+    border: 1px solid #34495e;
+    background: #fff;
+}
+
+.style_2.magenta .check input:checked~.checkmark {
+    border: 1px solid #9b59b6;
+    background: #fff;
+}
+
+.style_2.dark .check input:checked~.checkmark:after {
+    border: solid #34495e;
+    border-width: 0 3px 3px 0;
+}
+
+.style_2.magenta .check input:checked~.checkmark:after {
+    border: solid #9b59b6;
+    border-width: 0 3px 3px 0;
+}
+
+.style_2.orangered .check input:checked~.checkmark:after {
+    border: solid #e74c3c;
+    border-width: 0 3px 3px 0;
+}
+
+.style_2.blue .check input:checked~.checkmark:after {
+    border: solid #3498db;
+    border-width: 0 3px 3px 0;
+}
+
+.style_2 .check input:checked~.checkmark:after {
+    left: 7px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+/* Style the checkmark after */
+
+.style_2 .check .checkmark:after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 2px;
+    width: 10px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}

@@ -1,0 +1,86 @@
+/*===== Style_12 =====*/
+
+.style_12 .checkmark {
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.style_12 .check input:checked~.checkmark {
+    -webkit-transform: perspective( 30px) rotateX( 75deg);
+    -moz-transform: perspective( 30px) rotateX( 75deg);
+    -o-transform: perspective( 30px) rotateX( 75deg);
+    transform: perspective( 30px) rotateX( 75deg);
+    background-color: #3498db;
+    transition: 0.5s;
+}
+
+/* check after and before style */
+
+.style_12 .check:after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    left: 3px;
+    bottom: 5px;
+    z-index: 2;
+}
+
+.style_12 .check:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 3px;
+    bottom: 4px;
+    z-index: 1;
+}
+
+.style_12 .check input:checked~.checkmark {
+    z-index: 0;
+}
+
+/* On mouse-over */
+
+.style_12.blue .check:hover input~.checkmark {
+    background-color: #3498db;
+}
+
+.style_12.orangered .check:hover input~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_12.dark .check:hover input~.checkmark {
+    background-color: #34495e;
+}
+
+.style_12.magenta .check:hover input~.checkmark {
+    background-color: #9b59b6;
+}
+
+/* When the checkbox is checked */
+
+.style_12 .check input:checked~.checkmark {
+    transition: .5s;
+}
+
+.style_12.blue .check input:checked~.checkmark {
+    background-color: #3498db;
+}
+
+.style_12.orangered .check input:checked~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_12.dark .check input:checked~.checkmark {
+    background-color: #34495e;
+}
+
+.style_12.magenta .check input:checked~.checkmark {
+    background-color: #9b59b6;
+}
+
+.style_12 .check input:checked~.checkmark {
+    background-color: #e74c3c;
+}

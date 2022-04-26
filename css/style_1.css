@@ -1,0 +1,62 @@
+/*===== Style_1 =====*/
+
+/* On mouse-over */
+
+.style_1.blue .check:hover input~.checkmark {
+    background-color: #3498db;
+}
+
+.style_1.orangered .check:hover input~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_1.dark .check:hover input~.checkmark {
+    background-color: #34495e;
+}
+
+.style_1.magenta .check:hover input~.checkmark {
+    background-color: #9b59b6;
+}
+
+/* When the checkbox is checked */
+
+.style_1.blue .check input:checked~.checkmark {
+    background-color: #3498db;
+}
+
+.style_1.orangered .check input:checked~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_1.dark .check input:checked~.checkmark {
+    background-color: #34495e;
+}
+
+.style_1.magenta .check input:checked~.checkmark {
+    background-color: #9b59b6;
+}
+
+.style_1 .check input:checked~.checkmark:after {
+    left: 7px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+/* Style the checkmark after */
+
+.style_1 .check .checkmark:after {
+    left: -100%;
+    top: 2px;
+    width: 10px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+}

@@ -1,0 +1,54 @@
+/*===== Style_9 =====*/
+
+/* On mouse-over */
+
+.style_9 .check:hover input~.checkmark {
+    border-radius: 50%;
+}
+
+.style_9.blue .check:hover input~.checkmark {
+    background-color: #3498db;
+}
+
+.style_9.orangered .check:hover input~.checkmark {
+    background-color: #e74c3c;
+}
+
+.style_9.dark .check:hover input~.checkmark {
+    background-color: #34495e;
+}
+
+.style_9.magenta .check:hover input~.checkmark {
+    background-color: #9b59b6;
+}
+
+/* When the checkbox is checked */
+
+.style_9 .check input:checked~.checkmark {
+    border-radius: 50%;
+}
+
+.style_9.blue .check input:checked~.checkmark {
+    background-color: #3498db;
+    border: 2px solid #ccc;
+}
+
+.style_9.orangered .check input:checked~.checkmark {
+    background-color: #e74c3c;
+    border: 2px solid #ccc;
+}
+
+.style_9.dark .check input:checked~.checkmark {
+    background-color: #34495e;
+    border: 2px solid #ccc;
+}
+
+.style_9.magenta .check input:checked~.checkmark {
+    background-color: #9b59b6;
+    border: 2px solid #ccc;
+}
+
+.style_9 .check input:checked~.checkmark {
+    background-color: #e74c3c;
+    border: 2px solid #ccc;
+}
